@@ -1,9 +1,9 @@
-import example.pepita
+import example.*
 
 describe "group of tests for pepita" {
-
+  const ciudadTropical = new CiudadTropical(idiomas = ["espaniol", "ingles"], atracciones = 7)
   test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+    assert.equals(["espaniol", "ingles"], ciudadTropical.idiomas())
   }
 
 }
